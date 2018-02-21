@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- EDYTUJ odpowiednio tagi: TITLE,DESCRIPTION,AUTHOR -->
+    <title>React - Forms | PGS Software</title>
+    <meta name="description" content="React - Working with forms">
+    <meta name="author" content="Paweł">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link href="main.css" rel="stylesheet"></head>
+<!-- usuń klasę jeśli chcesz ciemne style (zenburn) dla 'code snippets' -->
+<body class="light-code">
+<div class="reveal">
+    <div class="slides">
+        <!-- TUTAJ ZACZYNA SIĘ PREZENTACJA - pierwszy slide -->
+
+<!-- Talk title -->
+<section data-state="squares-off theme orange">
+  <p><img src="./images/pgssoftware-logo-white.svg" alt="logo" class="img200"></p>
+  <h2>React Forms</h2>
+  <p>TODO subtitle</p>
+  <ul class="list-horizontal">
+    <li>Paweł Lula</li>
+  </ul>
+</section>
+
+<!-- Agenda -->
+<section>
+
+  <!-- Agenda dark -->
+  <section data-state="squares-off theme sidebar">
+    <h2>Agenda</h2>
+    <ul class="no-type dark-grey">
+      <li>Controlled Components</li>
+      <li>Uncontrolled Components</li>
+      <li>Forms and Redux</li>
+    </ul>
+  </section>
+
+</section>
+
+<!-- Chapter -->
+<section data-state="squares-off theme dark">
+  <h2>Chapter title one line</h2>
+  <p>chapter sub titles should be kept to two lines or less<br> and start from the small letter</p>
+  <p><img src="./images/pgssoftware-icon-32x32.png" alt="icon"></p>
+</section>
+
+<!-- Illustrations -->
+<section>
+  <section class="slide-flex right" data-state="squares-off theme dark">
+    <div>
+      <h2>Use illustrations that are in a good quality to support point</h2>
+    </div>
+    <p><img src="./images/Picture2.png" alt="Picture2"></p>
+  </section>
+  <section class="slide-flex" data-state="squares-off theme dark">
+    <p><img src="./images/Picture2.png" alt="Picture2"></p>
+    <div>
+      <h2>Use illustrations that are in a good quality to support point</h2>
+    </div>
+  </section>
+  <section class="slide-flex right" data-state="squares-off theme blacks">
+    <div>
+      <h2>Use illustrations that are in a good quality to support point</h2>
+    </div>
+    <p><img src="./images/Picture2.png" alt="Picture2"></p>
+  </section>
+  <section class="slide-flex" data-state="squares-off theme blacks">
+    <p><img src="./images/Picture2.png" alt="Picture2"></p>
+    <div>
+      <h2>Use illustrations that are in a good quality to support point</h2>
+    </div>
+  </section>
+</section>
+
+<!-- Contact / Get in touch -->
+<section class="slide-flex" data-state="squares-off">
+  <p><img src="./images/Picture1.jpg" class="border" alt="Picture1"></p>
+  <div>
+    <h1>Let's get in touch</h1>
+    <p>Speaker Name</p>
+    <p>
+      <img class="icon medium" src="./images/icon_mail.png" alt="mail"> email@pgs-soft.com <br/>
+      <img class="icon medium" src="./images/icon_twitter.png" alt="mail"> @twitterhandle
+    </p>
+  </div>
+</section>
+
+<!-- Thank you -->
+<section data-state="squares-off theme orange">
+  <!-- class img50 to img400 (width: 50, 100, 150, 200, 250, 300, 350, 400 px ) -->
+  <!-- class padding-bottom, -top, -left, -right (padding-*: 50, 100, 150, 200, 250, 300, 350, 400 px ) -->
+  <p><img src="./images/pgssoftware-logo-white.svg" alt="logo" class="img200 padding-bottom50"></p>
+  <h2>Thank you!</h2>
+  <p>Go and visit pgs-soft.com</p>
+  <ul class="list-horizontal">
+    <li>Speaker name</li>
+    <li>@socialmedia</li>
+  </ul>
+</section>
+
+<!-- Quote -->
+<section data-state="squares-off">
+  <q>
+    <h2>This is a quote slide.</h2>
+    <h2>Keep it tweetable.</h2>
+    <p>Author Name</p>
+  </q>
+</section>
+
+<!-- Chat -->
+<section data-state="squares-off">
+  <p><img src="./images/chat.png" alt="chat" style="max-width: 40%;"></p>
+</section>
+
+<!-- Icons -->
+<section data-state="squares-off">
+  <div class="flex space-around">
+    <img class="icon small" src="./images/icon_basket.png" alt="basket">
+    <img class="icon small" src="./images/icon_branch.png" alt="branch">
+    <img class="icon small" src="./images/icon_browser.png" alt="browser">
+    <img class="icon small" src="./images/icon_close.png" alt="close">
+    <img class="icon small" src="./images/icon_open.png" alt="open">
+  </div>
+  <div class="flex space-around">
+    <img class="icon medium" src="./images/icon_basket.png" alt="basket">
+    <img class="icon medium" src="./images/icon_branch.png" alt="branch">
+    <img class="icon medium" src="./images/icon_browser.png" alt="browser">
+    <img class="icon medium" src="./images/icon_close.png" alt="close">
+    <img class="icon medium" src="./images/icon_open.png" alt="open">
+  </div>
+  <div class="flex space-around">
+    <img class="icon small" src="./images/icon_folder.png" alt="folder">
+    <img class="icon small" src="./images/icon_lan.png" alt="lan">
+    <img class="icon small" src="./images/icon_mail.png" alt="mail">
+    <img class="icon small" src="./images/icon_maintenance.png" alt="maintenance">
+    <img class="icon small" src="./images/icon_mobile.png" alt="mobile">
+  </div>
+  <div class="flex space-around">
+    <img class="icon medium" src="./images/icon_folder.png" alt="folder">
+    <img class="icon medium" src="./images/icon_lan.png" alt="lan">
+    <img class="icon medium" src="./images/icon_mail.png" alt="mail">
+    <img class="icon medium" src="./images/icon_maintenance.png" alt="maintenance">
+    <img class="icon medium" src="./images/icon_mobile.png" alt="mobile">
+  </div>
+  <div class="flex space-around">
+    <img class="icon small" src="./images/icon_service.png" alt="service">
+    <img class="icon small" src="./images/icon_speed.png" alt="speed">
+    <img class="icon small" src="./images/icon_twitter.png" alt="twitter">
+    <img class="icon small" src="./images/icon_cloud.png" alt="cloud">
+    <img class="icon small" src="./images/icon_server.png" alt="server">
+  </div>
+  <div class="flex space-around">
+    <img class="icon medium" src="./images/icon_service.png" alt="service">
+    <img class="icon medium" src="./images/icon_speed.png" alt="speed">
+    <img class="icon medium" src="./images/icon_twitter.png" alt="twitter">
+    <img class="icon medium" src="./images/icon_cloud.png" alt="cloud">
+    <img class="icon medium" src="./images/icon_server.png" alt="server">
+  </div>
+</section>
+
+<!--code-->
+<section>
+  <section data-state="squares-off">
+    <h2>Pretty Code</h2>
+    <pre><code data-trim contenteditable>
+  function linkify( selector ) {
+    if( supports3DTransforms ) {
+
+      var nodes = document.querySelectorAll( selector );
+
+      for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+        var node = nodes[i];
+
+        if( !node.className ) {
+          node.className += ' roll';
+        }
+      }
+    }
+  }
+            </code></pre>
+    <p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+  </section>
+  <section data-state="squares-off theme dark">
+    <h2>Pretty Code</h2>
+    <pre><code data-trim contenteditable>
+  function linkify( selector ) {
+    if( supports3DTransforms ) {
+
+      var nodes = document.querySelectorAll( selector );
+
+      for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+        var node = nodes[i];
+
+        if( !node.className ) {
+          node.className += ' roll';
+        }
+      }
+    }
+  }
+            </code></pre>
+    <p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+  </section>
+  <section data-state="squares-off theme blacks">
+    <h2>Pretty Code</h2>
+    <pre><code data-trim contenteditable>
+  function linkify( selector ) {
+    if( supports3DTransforms ) {
+
+      var nodes = document.querySelectorAll( selector );
+
+      for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+        var node = nodes[i];
+
+        if( !node.className ) {
+          node.className += ' roll';
+        }
+      }
+    }
+  }
+            </code></pre>
+    <p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+  </section>
+</section>
+
+
+        <!-- TUTAJ KOŃCZY SIĘ PREZENTACJA -->
+    </div>
+</div>
+
+<script type="text/javascript" src="presentation.js"></script></body>
+</html>
