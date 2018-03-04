@@ -24,7 +24,6 @@
 <section data-state="squares-off theme orange">
   <p><img src="./images/pgssoftware-logo-white.svg" alt="logo" class="img200"></p>
   <h2>React Forms</h2>
-  <p>TODO subtitle</p>
   <ul class="list-horizontal">
     <li>Paweł Lula</li>
   </ul>
@@ -45,191 +44,145 @@
 
 </section>
 
-<!-- Chapter -->
-<section data-state="squares-off theme dark">
-  <h2>Chapter title one line</h2>
-  <p>chapter sub titles should be kept to two lines or less<br> and start from the small letter</p>
-  <p><img src="./images/pgssoftware-icon-32x32.png" alt="icon"></p>
-</section>
-
-<!-- Illustrations -->
+<!-- Controlled Components -->
 <section>
-  <section class="slide-flex right" data-state="squares-off theme dark">
-    <div>
-      <h2>Use illustrations that are in a good quality to support point</h2>
-    </div>
-    <p><img src="./images/Picture2.png" alt="Picture2"></p>
+  <section>
+      <h2>What is a controlled component?</h2>
+      <ul>
+        <li>
+          Controlled components have functions to govern the data going into them on every onChange event, rather than grabbing the data only once, e.g. when a user clicks a submit button.
+        </li>
+        <li>
+          This 'governed' data is then saved to state (the parent/container component's state).
+        </li>
+        <li>
+          Data displayed by a controlled component is received through props passed down from it's parent/container component.
+        </li>
+      </ul>
   </section>
-  <section class="slide-flex" data-state="squares-off theme dark">
-    <p><img src="./images/Picture2.png" alt="Picture2"></p>
-    <div>
-      <h2>Use illustrations that are in a good quality to support point</h2>
-    </div>
+  <section>
+      <h2>Controlled input</h2>
+      <iframe src="https://codesandbox.io/embed/kz41vp52o?hidenavigation=1&initialpath=controlled%2Ftext&module=%2Fsrc%2Fcontrolled%2FText.js" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>  
   </section>
-  <section class="slide-flex right" data-state="squares-off theme blacks">
-    <div>
-      <h2>Use illustrations that are in a good quality to support point</h2>
-    </div>
-    <p><img src="./images/Picture2.png" alt="Picture2"></p>
+  <section>
+      <h2>Controlled select</h2>
+      <iframe src="https://codesandbox.io/embed/kz41vp52o?hidenavigation=1&initialpath=controlled%2Fselect&module=%2Fsrc%2Fcontrolled%2FSelect.js" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
   </section>
-  <section class="slide-flex" data-state="squares-off theme blacks">
-    <p><img src="./images/Picture2.png" alt="Picture2"></p>
-    <div>
-      <h2>Use illustrations that are in a good quality to support point</h2>
-    </div>
+  <section>
+      <h2>Controlled multiselect</h2>
+      <iframe src="https://codesandbox.io/embed/kz41vp52o?hidenavigation=1&initialpath=controlled%2Fmultiselect&module=%2Fsrc%2Fcontrolled%2FMultiSelect.js" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe></section>
+  <section>
+      <h2>Controlled checkbox</h2>
+      <iframe src="https://codesandbox.io/embed/kz41vp52o?hidenavigation=1&initialpath=%2Fcontrolled%2Fcheckbox&module=%2Fsrc%2Fcontrolled%2FCheckbox.js" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+  </section>
+  <section>
+      <h2>Controlled textarea</h2>
+      <iframe src="https://codesandbox.io/embed/kz41vp52o?hidenavigation=1&initialpath=%2Fcontrolled%2Ftextarea&module=%2Fsrc%2Fcontrolled%2FTextarea.js" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+  </section>
+  <section>
+    <h3>Advantages:</h2>
+    <ul>
+      <li>You are set up to easily validate user input.</li>
+      <li>
+        You can dynamically render other components <br/>based on the value of the controlled component.
+        <aside class="notes">
+            For example, the value a user selects from a dropdown (e.g. 'dog' or 'cat') can control which other form components (e.g. a checkbox set of breeds) are rendered in the form.
+        </aside>
+      </li>
+    </ul>
+    <br/>
+    <br/>
+    <h3>Disadvantages:</h3>
+    <ul>
+      <li>
+        The amount of code you have to write. 
+        <aside class="notes">
+            The amount of code you have to write: 
+            You need a state property to pass to the form element as props, and you need a function to update the value of this property.
+        </span>
+      </li>
+      <li>
+        Possibility of <a href="https://css-tricks.com/css-keylogger/" target="_blank">CSS keylogger</a> attack.
+      </li>
+    </ul>
+</section>
+</section>
+
+<!-- Uncontrolled Components -->
+<section>
+    <section>
+        <h2>What is a uncontrolled component?</h2>
+        <ul>
+          <li>
+            Form data are handled by the DOM.
+          </li>
+          <li>
+            <a href="https://reactjs.org/docs/refs-and-the-dom.html" target="_blank">'ref'</a> is used to get and set form values.
+          </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Uncontrolled input</h2>
+        <iframe src="https://codesandbox.io/embed/kz41vp52o?hidenavigation=1&initialpath=%2Funcontrolled%2Ftext&module=%2Fsrc%2Funcontrolled%2FText.js" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+    </section>
+    <section data-state="squares-off">
+        <q>
+          <h2>In most cases, we recommend using controlled components to implement forms.</h2>
+          <p>React Team</p>
+        </q>
+      </section>
+   
+    <section>
+      <h2>Uncontrolled file input</h2>
+      <iframe src="https://codesandbox.io/embed/kz41vp52o?hidenavigation=1&initialpath=%2Funcontrolled%2Ffile&module=%2Fsrc%2Funcontrolled%2FFile.js" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+    </section>
+    
+    <section>
+        <h2>So, the difference?</h2>
+        <p>Controlled component can respond to input changes immediately; for example, by:</p>
+        <ul>
+          <li>in-place feedback, like validations</li>
+          <li>disabling the button unless all fields have valid data</li>
+          <li>enforcing a specific input format, like credit card numbers</li>
+        </ul>
+    </section>
+  </section>
+
+  <!-- Uncontrolled Components -->
+<section>
+  <section>
+      <h3>Forms and redux</h2>
+      
+  </section>
+  <section>
+      <h2>Let's do some live-coding</h2>
+      <a target="_blank" href="https://codesandbox.io/s/github/desfero/forms/tree/live-coding/?initialpath=%2Fwith-redux%2Fcontact-form&module=%2Fsrc%2Fwith-redux%2Fcomponents%2FContactForm.js">
+        <img alt="Edit react-forms" src="https://codesandbox.io/static/img/play-codesandbox.svg">
+      </a>
+      <p style="margin-top: -10px;">(bit.ly/react-forms-sandbox)</p>
+      <a href="https://github.com/desfero/forms/tree/live-coding" target="_blank">Repo to clone (bit.ly/react-forms-github)</a>      
+  </section>
+  <section>
+    <h2><a href="https://redux-form.com/7.3.0/" target="_blank" >redux-form</a> library</h2>
   </section>
 </section>
 
-<!-- Contact / Get in touch -->
-<section class="slide-flex" data-state="squares-off">
-  <p><img src="./images/Picture1.jpg" class="border" alt="Picture1"></p>
-  <div>
-    <h1>Let's get in touch</h1>
-    <p>Speaker Name</p>
-    <p>
-      <img class="icon medium" src="./images/icon_mail.png" alt="mail"> email@pgs-soft.com <br/>
-      <img class="icon medium" src="./images/icon_twitter.png" alt="mail"> @twitterhandle
-    </p>
-  </div>
+<section>
+  <h3>To read:</h3>
+  <ul>
+    <li><a href="https://reactjs.org/docs/forms.html" target="_blank">Controlled Components</a></li>
+    <li><a href="https://reactjs.org/docs/uncontrolled-components.html" target="_blank">Uncontrolled Components</a></li>
+    <li><a href="https://reactjs.org/docs/refs-and-the-dom.html" target="_blank">Refs and the DOM</a></li>
+    <li><a href="https://reactjs.org/docs/render-props.html" target="_blank">Render Props</a></li>
+  </ul>
 </section>
 
 <!-- Thank you -->
 <section data-state="squares-off theme orange">
   <!-- class img50 to img400 (width: 50, 100, 150, 200, 250, 300, 350, 400 px ) -->
   <!-- class padding-bottom, -top, -left, -right (padding-*: 50, 100, 150, 200, 250, 300, 350, 400 px ) -->
-  <p><img src="./images/pgssoftware-logo-white.svg" alt="logo" class="img200 padding-bottom50"></p>
-  <h2>Thank you!</h2>
-  <p>Go and visit pgs-soft.com</p>
-  <ul class="list-horizontal">
-    <li>Speaker name</li>
-    <li>@socialmedia</li>
-  </ul>
+  <h1>Thank you!</h1>
 </section>
-
-<!-- Quote -->
-<section data-state="squares-off">
-  <q>
-    <h2>This is a quote slide.</h2>
-    <h2>Keep it tweetable.</h2>
-    <p>Author Name</p>
-  </q>
-</section>
-
-<!-- Chat -->
-<section data-state="squares-off">
-  <p><img src="./images/chat.png" alt="chat" style="max-width: 40%;"></p>
-</section>
-
-<!-- Icons -->
-<section data-state="squares-off">
-  <div class="flex space-around">
-    <img class="icon small" src="./images/icon_basket.png" alt="basket">
-    <img class="icon small" src="./images/icon_branch.png" alt="branch">
-    <img class="icon small" src="./images/icon_browser.png" alt="browser">
-    <img class="icon small" src="./images/icon_close.png" alt="close">
-    <img class="icon small" src="./images/icon_open.png" alt="open">
-  </div>
-  <div class="flex space-around">
-    <img class="icon medium" src="./images/icon_basket.png" alt="basket">
-    <img class="icon medium" src="./images/icon_branch.png" alt="branch">
-    <img class="icon medium" src="./images/icon_browser.png" alt="browser">
-    <img class="icon medium" src="./images/icon_close.png" alt="close">
-    <img class="icon medium" src="./images/icon_open.png" alt="open">
-  </div>
-  <div class="flex space-around">
-    <img class="icon small" src="./images/icon_folder.png" alt="folder">
-    <img class="icon small" src="./images/icon_lan.png" alt="lan">
-    <img class="icon small" src="./images/icon_mail.png" alt="mail">
-    <img class="icon small" src="./images/icon_maintenance.png" alt="maintenance">
-    <img class="icon small" src="./images/icon_mobile.png" alt="mobile">
-  </div>
-  <div class="flex space-around">
-    <img class="icon medium" src="./images/icon_folder.png" alt="folder">
-    <img class="icon medium" src="./images/icon_lan.png" alt="lan">
-    <img class="icon medium" src="./images/icon_mail.png" alt="mail">
-    <img class="icon medium" src="./images/icon_maintenance.png" alt="maintenance">
-    <img class="icon medium" src="./images/icon_mobile.png" alt="mobile">
-  </div>
-  <div class="flex space-around">
-    <img class="icon small" src="./images/icon_service.png" alt="service">
-    <img class="icon small" src="./images/icon_speed.png" alt="speed">
-    <img class="icon small" src="./images/icon_twitter.png" alt="twitter">
-    <img class="icon small" src="./images/icon_cloud.png" alt="cloud">
-    <img class="icon small" src="./images/icon_server.png" alt="server">
-  </div>
-  <div class="flex space-around">
-    <img class="icon medium" src="./images/icon_service.png" alt="service">
-    <img class="icon medium" src="./images/icon_speed.png" alt="speed">
-    <img class="icon medium" src="./images/icon_twitter.png" alt="twitter">
-    <img class="icon medium" src="./images/icon_cloud.png" alt="cloud">
-    <img class="icon medium" src="./images/icon_server.png" alt="server">
-  </div>
-</section>
-
-<!--code-->
-<section>
-  <section data-state="squares-off">
-    <h2>Pretty Code</h2>
-    <pre><code data-trim contenteditable>
-  function linkify( selector ) {
-    if( supports3DTransforms ) {
-
-      var nodes = document.querySelectorAll( selector );
-
-      for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-        var node = nodes[i];
-
-        if( !node.className ) {
-          node.className += ' roll';
-        }
-      }
-    }
-  }
-            </code></pre>
-    <p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-  </section>
-  <section data-state="squares-off theme dark">
-    <h2>Pretty Code</h2>
-    <pre><code data-trim contenteditable>
-  function linkify( selector ) {
-    if( supports3DTransforms ) {
-
-      var nodes = document.querySelectorAll( selector );
-
-      for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-        var node = nodes[i];
-
-        if( !node.className ) {
-          node.className += ' roll';
-        }
-      }
-    }
-  }
-            </code></pre>
-    <p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-  </section>
-  <section data-state="squares-off theme blacks">
-    <h2>Pretty Code</h2>
-    <pre><code data-trim contenteditable>
-  function linkify( selector ) {
-    if( supports3DTransforms ) {
-
-      var nodes = document.querySelectorAll( selector );
-
-      for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-        var node = nodes[i];
-
-        if( !node.className ) {
-          node.className += ' roll';
-        }
-      }
-    }
-  }
-            </code></pre>
-    <p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-  </section>
-</section>
-
 
         <!-- TUTAJ KOŃCZY SIĘ PREZENTACJA -->
     </div>
